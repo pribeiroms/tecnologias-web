@@ -1,125 +1,88 @@
-<!doctype html>  
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Aluno Online</title>
+
+  <!-- link font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    body{
-      display:flex;
-      margin:0;
-    }
-
-    aside{
-      width:300px;
-      height:1000px;
-      background:#eeeeee;
-      padding:20px;
-    }
-
-    main{
-      flex:1;
-      padding:40px;
-    }
-  </style>
-
+  <!-- link css -->
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
 
-  <!--menu lateral-->
-  <aside>
+  <div class="container">
 
-     <header>
-     <h1><i class="fa-solid fa-graduation-cap fa-2x"></i> Aluno Online</h1>
-     </header>
+    <!-- menu lateral -->
+    <aside class="sidebar">
+      <header>
+        <h1><i class="fa-solid fa-graduation-cap fa"></i> Aluno Online</h1>
+      </header>
 
-   <br>
-   <nav>
-      <ul>
-        <li>
-          <a href="#">
-            <h3>Dashboard</h3>
-          </a>
-        </li> 
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Notas</a></li>
+          <li><a href="#">Faltas</a></li>
+          <li><a href="#">Boletos</a></li>
+          <li><a href="#">Requerimentos</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-        <li>
-          <a href="#">
-            <h3>Notas</h3>
-          </a>
-        </li> 
+    <!-- conteudo -->
+    <main class="main">
 
-        <li>
-          <a href="#">
-            <h3>Faltas</h3>
-          </a>
-        </li> 
+      <!-- topbar -->
+      <header class="topbar">
+        <h2>Olá, Aluno!</h2>
+        <!-- icone usuario -->
+        <i class="fa-solid fa-user-circle topbar-icon"></i>
+      </header>
 
-        <li>
-          <a href="#">
-            <h3>Boletos</h3>
-          </a>
-        </li> 
+      <h2>Bem-vindo ao portal do aluno</h2>
 
-        <li>
-          <a href="#">
-            <h3>Requerimentos</h3>
-          </a>
-        </li> 
+      <!-- cards -->
+      <div class="cards">
 
-        <li>
-          <a href="#">
-            <h3>Sair</h3>
-          </a>
-        </li> 
-        
-      </ul>
-    </nav>
+        <!-- mural -->
+        <section class="card">
+          <h2>Mural de Avisos</h2>
+          <ul>
+            <li>Inscrição para o projeto de extensão</li>
+            <li>Eleição para representante de turma</li>
+          </ul>
+        </section>
 
-  </aside>
+        <!-- calendario -->
+        <section class="card">
+          <h2>Calendário Acadêmico</h2>
+          <ul>
+            <li>23/02 - Início do período letivo 2026-1</li>
+            <li>25/04 - Prazo final para aplicação da P1</li>
+            <li>23/06 - Prazo final para aplicação da P2</li>
+            <li>04/07 - Fim do período letivo 2026-1</li>
+          </ul>
+        </section>
 
-<!--conteúdo principal-->
-  <main>
+        <!-- disciplinas -->
+        <section class="card">
+          <h2>Minhas Disciplinas</h2>
+          <ul>
+            <li>Banco de Dados I (HMDC253)</li>
+            <li>Estrutura de Dados (MDC127)</li>
+            <li>Tecnologias Web (HMDC251)</li>
+          </ul>
+        </section>
 
-<!--barra superior-->
-    <header>
-      <h2><i class="fa-solid fa-user fa-lg"></i> Olá, Aluno!</h2>
-    </header>
+      </div>
 
-    <h2>Bem-vindo ao portal do aluno</h2>
+    </main>
 
-<!--mural de avisos-->
-    <section>
-      <h2>Mural de Avisos</h2>
-      <ul>
-      <li>Inscrição para o projeto de extensão</li>
-      <li>Eleição para representante de turma</li>
-      </ul>
-    </section>
-
-<!--calendário acadêmico-->
-    <section>
-      <h2>Calendário Acadêmico</h2>
-      <ul>
-      <li>23/02 - Início do período letivo 2026-1</li>
-      <li>25/04 - Prazo final para aplicação da P1</li>
-      <li>23/06 - Prazo final para aplicação da P2</li>
-      <li>04/07 - Fim do período letivo 2026-1</li>
-      </ul>
-    </section>
-
-<!--minhas disciplinas-->
-    <section>
-      <h2>Minhas Disciplinas</h2>
-      <ul>
-      <li>Banco de Dados I (HMDC253)</li>
-      <li>Estrutura de Dados (MDC127)</li>
-      <li>Tecnologias Web (HMDC251)</li>
-      </ul>
-    </section>
-
-  </main>
+  </div>
 
 </body>
 </html>
