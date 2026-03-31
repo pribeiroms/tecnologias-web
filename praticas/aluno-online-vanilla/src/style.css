@@ -152,7 +152,7 @@ body {
 }
 
 /* responsividade */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .container {
     flex-direction: column;
   }
